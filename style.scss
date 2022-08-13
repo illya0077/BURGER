@@ -18,6 +18,7 @@
     background-repeat: no-repeat;
     height: 825px;
     width: 100%;
+    color: rgb(61, 37, 20);
 }
 
 .container{
@@ -101,6 +102,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 50px;
+    color: rgb(61, 37, 20);
 
     .it-is-a-good{
         margin-top: 130px;
@@ -194,6 +196,7 @@
     display: grid;
     justify-items: center;
     width: 100px;
+    color: rgb(61, 37, 20);
 
     .btn-always-tasty{
         text-transform: uppercase;
@@ -233,6 +236,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding-top: 60px;
+        color: rgb(61, 37, 20);
 
         .burger-text{
             text-align: center;
@@ -246,6 +250,7 @@
                 font-size: 38px;
                 font-weight:bold;
                 text-transform: uppercase;
+                
             }
         }
 
@@ -276,3 +281,124 @@
     }
 }
 
+
+.slider{
+    margin-bottom: 120px;
+
+.carousel-wrapper{
+    height:500px;
+    position:relative;
+    width: 1300px;
+    margin:0 auto;
+    padding: 30px;
+    // border: 3px solid gray;
+    box-shadow: 30px 30px 70px rgba(0,0,0,0.3);
+    
+}
+
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding: 24px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+}
+
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+}
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+}
+   
+  .arrow-next{
+    right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+}
+  
+  .light{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+  
+.carousel-item{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-items: end;
+}
+  
+  /*Select every element*/
+  [id^="item"] {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(37, 248, 18);
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    }
+  
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+.item-1-left{
+    padding-right: 30px;
+}
+
+    [class*="left"]{
+        font-size: 21px;
+        font-family: 'Montserrat', sans-serif;        
+        line-height: 1.8;
+        color: rgb(61, 37, 20);
+
+        h3{
+            font-family: 'Bebas Neue';
+            font-size: 38px;
+            font-weight:bold;
+            text-transform: uppercase;
+            line-height: 0.7;
+        }
+
+        h2{
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 42px;
+            text-transform: uppercase;
+        }
+    }
+
+
+
+}
+    
+
+  
+  
