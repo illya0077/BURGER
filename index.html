@@ -7,6 +7,7 @@
     <title>Burger SHOP</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -25,10 +26,10 @@
                                 Express Delivery +1 234 567 890
                         </div>
                         <div class="menu">
-                            <div>H &nbsp;o &nbsp;m &nbsp;e</div>
-                            <div>M &nbsp;e &nbsp;n &nbsp;u</div>
-                            <div>O &nbsp;u &nbsp;r &nbsp;&nbsp;S &nbsp;t &nbsp;o &nbsp;r &nbsp;y</div>
-                            <div>C &nbsp;o &nbsp;n &nbsp;t &nbsp;a &nbsp;c &nbsp;t</div>
+                            <div class="menu1">H &nbsp;o &nbsp;m &nbsp;e </div>
+                            <div class="menu2">M &nbsp;e &nbsp;n &nbsp;u</div>
+                            <div class="menu3">O &nbsp;u &nbsp;r &nbsp;&nbsp;S &nbsp;t &nbsp;o &nbsp;r &nbsp;y</div>
+                            <div  class="menu4">C &nbsp;o &nbsp;n &nbsp;t &nbsp;a &nbsp;c &nbsp;t</div>
                         </div>                   
                     </div>
                 </div>
@@ -61,14 +62,15 @@
         <div class="container">
             <div class="row">
                 <div class="section-1">
-                    <div class="section-1-box-1">
+                    <div data-aos="fade-right" class="section-1-box-1">
                         <img src="images/burger-1.png" alt="">
                         <div class="section-1-box-1-text">
                             <span>Try it today</span> 
                             <br> Most Popular Burger
                         </div>
                     </div>
-                    <div class="section-1-box-2">
+                    
+                    <div data-aos="fade-left" class="section-1-box-2">
                         <img src="images/burger-2.png" alt="">
                         <div class="section-1-box-2-text">
                             <span>Try it today</span> 
@@ -76,7 +78,7 @@
                             <br> more taste
                         </div>
                     </div>
-                    <div class="section-1-box-3">
+                    <div data-aos="fade-left" class="section-1-box-3">
                         <img src="images/burger-3.png" alt="">
                         <div class="section-1-box-3-text">
                             <span>Try it today</span> 
@@ -101,7 +103,7 @@
                     
                     <div class="burger-sections">
                         <div class="burger-1">
-                            <img src="images/burger-2-1.png" alt="" height="360px">
+                            <img src="images/burger-2-1.png" alt="" >
                             <div class="burger-text">
                                 <h1>Lorem ipsum dolor</h1>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,7 +111,7 @@
                             <button class="btn-order-now">Order Now</button>
                         </div>
                         <div class="burger-2">
-                            <img src="images/burger-2-2.png" alt="">
+                            <img src="images/burger-2-2.png" alt="" height="328px">
                             <div class="burger-text">
                                 <h1>Lorem ipsum dolor</h1>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -117,7 +119,7 @@
                             <button class="btn-order-now">Order Now</button>
                         </div>
                         <div class="burger-3">
-                            <img src="images/burger-2-1.png" alt="" height="360px">
+                            <img src="images/burger-2-1.png" alt="" >
                             <div class="burger-text">
                                 <h1>Lorem ipsum dolor</h1>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -239,5 +241,9 @@
 
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
